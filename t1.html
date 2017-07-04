@@ -1,0 +1,30 @@
+<html>
+<head>
+<title> TO DO LIST </title>
+<style>
+#t1
+{
+ box-shadow:2px 2px 2px #999;
+}
+
+</style>
+</head>
+<body>
+<form   >
+  Task: 
+   <input type="text"  id="t1" name="tt"onkeyup="myfun()" placeholder="TO DO Task"><br><br>
+    
+  Your task: <span id="t2"></span>
+<script>
+function myfun()
+               {
+                var x=document.getElementById("t1").value;
+                document.getElementById("t2").innerHTML=x;
+               }
+</script>
+</form>
+</body>
+</html>
+
+
+ 
