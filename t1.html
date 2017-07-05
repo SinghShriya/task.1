@@ -1,13 +1,10 @@
 <html>
 <head>
 <title> TO DO LIST </title>
-<style>
-#t1
-{
- box-shadow:2px 2px 2px #999;
-}
 
-</style>
+
+<link rel="stylesheet" type="text/css" href="t1.css">
+
 </head>
 <body>
 <form   >
@@ -15,12 +12,7 @@
    <input type="text"  id="t1" name="tt"onkeyup="myfun()" placeholder="TO DO Task"><br><br>
     
   Your task: <span id="t2"></span>
-<script>
-function myfun()
-               {
-                var x=document.getElementById("t1").value;
-                document.getElementById("t2").innerHTML=x;
-               }
+<script src="t1.js">
 </script>
 </form>
 </body>
