@@ -1,6 +1,6 @@
 var fs = require('fs');
  
-fs.readFile('s', 'utf8', function(err, contents) {
+fs.readFile('S.txt', 'utf8', function(err, contents) {
     console.log(contents);
 });
  
