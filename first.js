@@ -1,8 +1,11 @@
-var fs = require('fs');
- 
-fs.readFile('S.txt', 'utf8', function(err, contents) {
-    console.log(contents);
-});
- 
-console.log('after calling readFile');
- 
+function fileread(filename){
+
+    var contents= fs.readFileSync(filename);
+    return contents;
+}
+
+var fs =require("fs");  
+
+var data= fileread("s.txt");
+
+console.log(data.toString());
