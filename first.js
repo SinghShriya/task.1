@@ -1,7 +1,10 @@
 var fs = require("fs");
  
-function readData(err, data) {
+function printData(err, data) {
       console.log(data);
 }
- 
-fs.readFile('s.txt', 'utf8', readData);
+ function myReadFile(callback){
+      fs.readFile('s.txt', 'utf8', callback);
+ }
+
+ myReadFile(printData);     
