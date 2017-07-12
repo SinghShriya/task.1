@@ -2,12 +2,16 @@
 
 <body>
 <script> 
-   
-sayHi("John"); // Hello, John
-
-function sayHi(name) {
-  alert( `Hello, ${name}` );
+function ask(question, yes, no) {
+  if (confirm(question)) yes()
+  else no();
 }
+
+ask(
+  "Do you agree?",
+  () => alert("You agreed."),
+  () => alert("You canceled the execution.")
+);
 </script>
 </body>
 </html>
