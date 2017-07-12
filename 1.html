@@ -2,16 +2,11 @@
 
 <body>
 <script> 
-function ask(question, yes, no) {
-  if (confirm(question)) yes()
-  else no();
-}
+let userName = prompt("Your name?", "Shriya");
+let isTeaWanted = confirm("Do you want some tea?");
 
-ask(
-  "Do you agree?",
-  () => alert("You agreed."),
-  () => alert("You canceled the execution.")
-);
+alert( "Visitor: " + userName ); 
+alert( "Tea wanted: " + isTeaWanted ); 
 </script>
 </body>
 </html>
