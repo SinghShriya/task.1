@@ -2,12 +2,17 @@
 
 <body>
 <script> 
-let user = { 
-     name:"john"
-     
- };
+let codes = {
+  "49": "Germany",
+  "41": "Switzerland",
+  "44": "Great Britain",
+  
+  "1": "USA"
+};
 
-alert( user.name===undefined ); 
+for(let key in codes) {
+  alert(key); 
+}
 </script>
 </body>
 </html>
