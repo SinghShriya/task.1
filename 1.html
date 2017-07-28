@@ -2,23 +2,16 @@
 
 <body>
 <script> 
-let user = {
+ let user = {
   name: "John",
   age: 30
 };
 
-let  clone= {}; 
+user.sayHi = function() {
+  alert("Hello!");
+};
 
-
-for (let key in user) {
-  clone[key] = user[key];
-}
-
-
-clone.name = "Pete"; 
-
-alert( user.name ); 
-alert(clone.name);
+user.sayHi();
 </script>
 </body>
 </html>
